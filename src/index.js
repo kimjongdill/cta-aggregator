@@ -27,11 +27,8 @@ addEventListener('fetch', event => {
  */
 async function handleRequest(request) {
   const origin = request.headers.get('Origin');
-  if(!ALLOWED_ORIGINS.find(x => x === origin)){
-    return new Response({}, {status: 403, statusText: 'Origin not allowed'});
-  }
-
   const url = new URL(request.url);
+  
   const key = url.searchParams.get('key');
   if(key !== MY_API_KEY){
     return new Response({}, {status: 403, statusText: 'Invalid api key'});  

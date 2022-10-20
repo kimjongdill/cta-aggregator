@@ -6,7 +6,7 @@ const QUERY = new URLSearchParams({
     format: 'json'
 });
 
-async function getTimes() {
+async function getBusTimes() {
     url = `${BUS_URL}?${QUERY.toString()}`
     console.log(url);
     const responseRaw = await fetch(url);
@@ -24,4 +24,4 @@ async function getTimes() {
     return formatted;
 }
 
-export default getTimes;
+export default getBusTimes;
