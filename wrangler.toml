@@ -1,0 +1,10 @@
+name = "cta-aggregator"
+main = "src/index.js"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+
+# The necessary secrets are: 
+# CTA_BUS_KEY
+# CTA_TRAIN_KEY
