@@ -1,5 +1,5 @@
 const BUS_URL = 'http://www.ctabustracker.com/bustime/api/v2/getpredictions';
-const STOPS = ['17479', '7862'];
+const STOPS = ['17479', '17478'];
 const QUERY = new URLSearchParams({
     key: CTA_BUS_KEY,
     stpid: STOPS.join(','),
