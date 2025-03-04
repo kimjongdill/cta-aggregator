@@ -20,7 +20,7 @@ async function getTrainTimes() {
         return {
             destination: x.destNm,
             predictedTime: military,
-            isGhost: x.isSch,
+            isGhost: x.isSch !== "0",
             route: x.rt,
             runNumber: x.rn,
         }
